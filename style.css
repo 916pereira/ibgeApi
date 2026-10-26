@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 480px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #243b55;
+    margin-bottom: 12px;
+}
+
+.container > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-top: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    background: white;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #4a90e2;
+    border-color: #4a90e2;
+}
+
+select:disabled,
+input:disabled {
+    background: #e9ecef;
+    cursor: not-allowed;
+}
+
+#quantidadeCidades {
+    color: #555;
+    font-size: 14px;
+    text-align: left;
+    margin: 4px 0;
+}
+
+button {
+    margin-top: 15px;
+    padding: 13px;
+    background: #243b55;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #365779;
+}
+
+#mensagem {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 6px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+#mensagem:empty {
+    display: none;
+}
+
+.sucesso {
+    background: #d4edda;
+    color: #155724;
+}
+
+.erro {
+    background: #f8d7da;
+    color: #721c24;
+}
